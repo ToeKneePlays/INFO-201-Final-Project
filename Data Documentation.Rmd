@@ -1,0 +1,20 @@
+---
+title: "Data Documentation"
+author: "Tony Truong"
+date: "2023-12-06"
+output: html_document
+---
+
+The original data sources are from Kaggle. The two datasets we sourced from are called "Average SAT Scores for NYC Public Schools" and "NYC Public School Attendance". <https://www.kaggle.com/datasets/nycopendata/high-schools/data> <https://www.kaggle.com/datasets/bmorsy/nyc-public-school-attendance?select=cleaned_demo.csv>
+
+Variables used in our "final_data.csv" file
+
+| DBN                                                                   | School.Name                        | total_avg_SAT                                                           | Percent_Poverty                                                                                                 | score_category                                                                        | Attendance                                                                   |
+|-----------------------------------------------------------------------|------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| DBN (District Borough Number) identifies a specific school or program | Name of specific school or program | The total average SAT score for a given school (Avg Math + Avg Reading) | The total percentage of students qualifying for free or reduced price lunch or are eligible for Human Resources | Label of either "Above Average" or "Below Average" with the average SAT score of 1050 | An average of the schools daily attendance in the academic year of 2018/2019 |
+
+Number of rows: 435
+
+Number of columns: 6
+
+There are 0 missing values in this final dataset. This dataset was cleaned fully of all invalid values.
