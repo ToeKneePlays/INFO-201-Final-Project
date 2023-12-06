@@ -1,0 +1,363 @@
+"","DBN","School.Name","total_avg_SAT","Percent_Poverty","score_category","Attendance"
+"1","01M292","Henry Street School for International Studies",816,0.812,"Below Average",0.918
+"2","01M448","University Neighborhood High School",792,0.867,"Below Average",0.9121
+"3","01M450","East Side Community School",882,0.665,"Below Average",0.9471
+"4","01M509","Marta Valle High School",851,0.882,"Below Average",0.7969
+"5","01M539","New Explorations into Science, Technology and Math High School",1258,0.235,"Above Average",0.9333
+"6","01M696","Bard High School Early College",1275,0.402,"Above Average",0.9503
+"13","02M288","Food and Finance High School",863,0.827,"Below Average",0.8801
+"14","02M294","Essex Street Academy",806,0.676,"Below Average",0.8873
+"15","02M296","High School of Hospitality Management",884,0.9,"Below Average",0.8426
+"16","02M298","Pace High School",865,0.78,"Below Average",0.8704
+"17","02M300","Urban Assembly School of Design and Construction",862,0.798,"Below Average",0.8148
+"18","02M303","Facing History School",722,0.79,"Below Average",0.8019
+"19","02M305","Urban Assembly Academy of Government and Law",784,0.827,"Below Average",0.8526
+"20","02M308","Lower Manhattan Arts Academy",846,0.752,"Below Average",0.8654
+"21","02M316","Urban Assembly School of Business for Young Women",838,0.844,"Below Average",0.8117
+"22","02M374","Gramercy Arts High School",905,0.791,"Below Average",0.8398
+"23","02M376","NYC iSchool",1033,0.341,"Below Average",0.9484
+"24","02M392","Manhattan Business Academy",817,0.87,"Below Average",0.8499
+"25","02M393","Business of Sports School",781,0.725,"Below Average",0.8573
+"26","02M399","High School for Language and Diplomacy",879,0.755,"Below Average",0.8335
+"27","02M400","High School for Environmental Studies",923,0.82,"Below Average",0.8625
+"28","02M407","Institute for Collaborative Education",1051,0.274,"Above Average",0.9087
+"29","02M408","Professional Performing Arts High School",1016,0.349,"Below Average",0.8995
+"30","02M411","Baruch College Campus High School",1118,0.387,"Above Average",0.9618
+"31","02M412","NYC Lab School for Collaborative Studies",1145,0.261,"Above Average",0.9416
+"32","02M413","School of the Future High School",1067,0.435,"Above Average",0.9356
+"33","02M414","NYC Museum School",1090,0.561,"Above Average",0.9321
+"34","02M416","Eleanor Roosevelt High School",1258,0.194,"Above Average",0.9639
+"35","02M418","Millennium High School",1137,0.493,"Above Average",0.9687
+"36","02M419","Landmark High School",772,0.8,"Below Average",0.8019
+"37","02M420","High School for Health Professions and Human Services",897,0.695,"Below Average",0.9203
+"39","02M425","Leadership and Public Service High School",786,0.829,"Below Average",0.8335
+"40","02M427","Manhattan Academy for Arts and Language",684,0.979,"Below Average",0.8633
+"42","02M437","Hudson High School of Learning Technologies",785,0.803,"Below Average",0.826
+"43","02M438","International High School at Union Square",733,0.86,"Below Average",0.8868
+"44","02M439","Manhattan Village Academy",1001,0.768,"Below Average",0.9812
+"45","02M449","Vanguard High School",840,0.726,"Below Average",0.8725
+"46","02M459","Manhattan International High School",796,0.706,"Below Average",0.8769
+"47","02M475","Stuyvesant High School",1451,0.417,"Above Average",0.9693
+"48","02M489","High School of Economics and Finance",911,0.757,"Below Average",0.8992
+"49","02M500","Unity Center for Urban Technologies",760,0.914,"Below Average",0.8084
+"50","02M507","Urban Assembly Gateway School for Technology",877,0.572,"Below Average",0.9238
+"51","02M519","Talent Unlimited High School",983,0.56,"Below Average",0.9102
+"52","02M520","Murry Bergtraum High School for Business Careers",833,0.769,"Below Average",0.7658
+"53","02M529","Jacqueline Kennedy Onassis High School",840,0.767,"Below Average",0.78
+"54","02M531","Repertory Company High School for Theatre Arts",876,0.675,"Below Average",0.9106
+"57","02M542","Manhattan Bridges High School",769,0.87,"Below Average",0.9061
+"58","02M543","New Design High School",777,0.775,"Below Average",0.8286
+"59","02M545","High School for Dual Language and Asian Studies",1066,0.886,"Above Average",0.9846
+"61","02M551","Urban Assembly New York Harbor School",899,0.546,"Below Average",0.8886
+"62","02M580","Richard R. Green High School of Teaching",826,0.821,"Below Average",0.9054
+"63","02M600","High School of Fashion Industries",875,0.808,"Below Average",0.9039
+"65","02M615","Chelsea Career and Technical Education High School",857,0.78,"Below Average",0.8577
+"66","02M630","Art and Design High School",930,0.555,"Below Average",0.8957
+"67","02M655","Life Sciences Secondary School",875,0.788,"Below Average",0.7748
+"68","03M299","High School for Arts, Imagination, and Inquiry",764,0.795,"Below Average",0.8142
+"69","03M307","Urban Assembly School for Media Studies",811,0.87,"Below Average",0.8515
+"70","03M402","Urban Assembly School for Green Careers",764,0.852,"Below Average",0.8196
+"71","03M403","Global Learning Collaborative",813,0.816,"Below Average",0.8573
+"72","03M415","Wadleigh Secondary School for the Performing and Visual Arts",782,0.796,"Below Average",0.8311
+"73","03M417","Frank McCourt High School",980,0.53,"Below Average",0.9162
+"74","03M479","Beacon High School",1169,0.361,"Above Average",0.9685
+"75","03M485","Fiorello H. LaGuardia High School of Music and Art and Performing Arts",1184,0.283,"Above Average",0.9515
+"76","03M492","High School for Law, Advocacy, and Community Justice",832,0.897,"Below Average",0.8578
+"77","03M494","High School of Arts and Technology",849,0.848,"Below Average",0.8047
+"78","03M541","Manhattan / Hunter Science High School",1112,0.59,"Above Average",0.9741
+"80","03M860","Frederick Douglass Academy II Secondary School",774,0.823,"Below Average",0.7861
+"83","04M435","Manhattan Center for Science and Mathematics",1061,0.804,"Above Average",0.9404
+"84","04M495","Park East High School",862,0.807,"Below Average",0.942
+"85","04M555","Central Park East High School",951,0.78,"Below Average",0.9687
+"86","04M610","Young Women's Leadership School",943,0.781,"Below Average",0.9066
+"87","04M680","Heritage School",765,0.898,"Below Average",0.885
+"89","05M304","Mott Hall High School",861,0.92,"Below Average",0.8479
+"90","05M362","Columbia Secondary School",1144,0.483,"Above Average",0.9062
+"92","05M369","Urban Assembly School for the Performing Arts",778,0.829,"Below Average",0.8245
+"93","05M499","Frederick Douglass Academy",915,0.77,"Below Average",0.8509
+"94","05M670","Thurgood Marshall Academy for Learning and Social Change",796,0.716,"Below Average",0.8809
+"95","05M692","High School for Mathematics, Science, and Engineering at City College",1293,0.403,"Above Average",0.9531
+"97","06M293","City College Academy of the Arts",940,0.809,"Below Average",0.904
+"98","06M346","Community Health Academy of the Heights",776,0.882,"Below Average",0.8263
+"99","06M348","Washington Heights Expeditionary Learning School",866,0.807,"Below Average",0.8854
+"101","06M462","College Academy",744,0.96,"Below Average",0.819
+"102","06M463","High School for Media and Communications",759,0.955,"Below Average",0.8951
+"103","06M467","High School for Law and Public Service",795,0.896,"Below Average",0.8053
+"104","06M468","High School for Health Careers and Sciences",759,0.981,"Below Average",0.8879
+"105","06M540","A. Philip Randolph Campus High School",912,0.855,"Below Average",0.8534
+"106","06M552","Gregorio Luperon High School for Science and Mathematics",738,0.992,"Below Average",0.9137
+"107","07X221","South Bronx Preparatory (College Board)",833,0.942,"Below Average",0.8909
+"110","07X334","International Community High School",683,0.976,"Below Average",0.8891
+"111","07X427","Community School for Social Justice",762,0.899,"Below Average",0.8078
+"112","07X473","Mott Haven Village Preparatory High School",750,0.968,"Below Average",0.7658
+"113","07X495","University Heights Secondary School",866,0.817,"Below Average",0.9383
+"114","07X500","Hostos-Lincoln Academy of Science",914,0.795,"Below Average",0.8794
+"117","07X527","Bronx Leadership Academy II High School",739,0.941,"Below Average",0.8553
+"119","07X548","Urban Assembly School for Careers in Sports",807,0.837,"Below Average",0.822
+"120","07X551","Urban Assembly Bronx Academy of Letters",798,0.903,"Below Average",0.8254
+"121","07X600","Alfred E. Smith Career and Technical Education High School",763,0.923,"Below Average",0.8651
+"122","07X670","Health Opportunities High School",760,0.869,"Below Average",0.8216
+"123","08X269","Bronx Studio School for Writers and Artists",829,0.845,"Below Average",0.8519
+"124","08X282","Women's Academy of Excellence",776,0.903,"Below Average",0.7887
+"125","08X293","Renaissance High School for Musical Theater and Technology",801,0.715,"Below Average",0.8355
+"127","08X312","Millennium Art Academy",809,0.742,"Below Average",0.8362
+"132","08X367","Archimedes Academy for Math, Science, and Technology Applications",848,0.768,"Below Average",0.8426
+"133","08X376","Antonia Pantoja Preparatory Academy (College Board)",850,0.83,"Below Average",0.8286
+"134","08X405","Herbert H. Lehman High School",845,0.775,"Below Average",0.8533
+"136","08X452","Bronx Guild",758,0.857,"Below Average",0.8005
+"138","08X530","Banana Kelly High School",769,0.874,"Below Average",0.8181
+"142","09X227","Bronx Collegiate Academy",796,0.881,"Below Average",0.8461
+"143","09X231","Eagle Academy for Young Men",808,0.78,"Below Average",0.8758
+"144","09X241","Urban Assembly School for Applied Math and Science",863,0.942,"Below Average",0.8407
+"145","09X250","Eximius College Preparatory Academy (College Board)",791,0.814,"Below Average",0.8858
+"146","09X252","Mott Hall Bronx High School",816,0.916,"Below Average",0.8393
+"147","09X260","Bronx Center for Science and Mathematics",981,0.877,"Below Average",0.9137
+"148","09X263","Validus Preparatory Academy: An Expeditionary Learning School",757,0.889,"Below Average",0.815
+"150","09X297","Morris Academy for Collaborative Studies",796,0.941,"Below Average",0.849
+"151","09X324","Bronx Early College Academy for Teaching and Learning",837,0.878,"Below Average",0.8966
+"153","09X329","DreamYard Preparatory School",770,0.886,"Below Average",0.8473
+"155","09X365","Academy for Language and Technology",705,1,"Below Average",0.8864
+"156","09X403","Bronx International High School",685,0.892,"Below Average",0.7991
+"157","09X404","School for Excellence",762,0.871,"Below Average",0.734
+"158","09X412","Bronx High School of Business",725,0.931,"Below Average",0.8287
+"159","09X413","Bronx High School for Medical Science",852,0.814,"Below Average",0.8895
+"160","09X505","Bronx School for Law, Government, and Justice",812,0.863,"Below Average",0.8846
+"161","09X517","Frederick Douglass Academy III Secondary School",773,0.863,"Below Average",0.7659
+"162","09X525","Bronx Leadership Academy High School",747,0.873,"Below Average",0.7878
+"163","09X543","High School for Violin and Dance",764,0.917,"Below Average",0.7667
+"165","10X141","Riverdale/Kingsbridge Academy",981,0.508,"Below Average",0.8965
+"166","10X213","Bronx Engineering and Technology Academy",800,0.928,"Below Average",0.7897
+"167","10X225","Theatre Arts Production Company School",823,0.793,"Below Average",0.832
+"168","10X237","Marie Curie School for Medicine, Nursing, and Health Professions",843,0.758,"Below Average",0.7925
+"169","10X243","West Bronx Academy for the Future",787,0.943,"Below Average",0.8627
+"171","10X268","Kingsbridge International High School",677,0.961,"Below Average",0.8526
+"172","10X284","Bronx School of Law and Finance",778,0.881,"Below Average",0.7832
+"173","10X342","International School for Liberal Arts",777,0.981,"Below Average",0.8758
+"176","10X368","In-Tech Academy",845,0.859,"Below Average",0.8859
+"177","10X374","Knowledge and Power Preparatory Academy International High School (KAPPA)",825,0.871,"Below Average",0.8502
+"178","10X433","High School for Teaching and the Professions",733,0.867,"Below Average",0.8443
+"179","10X434","Belmont Preparatory High School",821,0.844,"Below Average",0.8908
+"180","10X437","Fordham High School for the Arts",802,0.893,"Below Average",0.9128
+"181","10X438","Fordham Leadership Academy for Business and Technology",728,0.824,"Below Average",0.9433
+"182","10X439","Bronx High School for Law and Community Service",803,0.898,"Below Average",0.8743
+"183","10X440","DeWitt Clinton High School",881,0.788,"Below Average",0.8234
+"184","10X442","Celia Cruz Bronx High School of Music",851,0.869,"Below Average",0.9193
+"185","10X445","Bronx High School of Science",1374,0.42,"Above Average",0.9685
+"186","10X477","Marble Hill High School for International Studies",868,0.891,"Below Average",0.9308
+"188","10X546","Bronx Theatre High School",766,0.841,"Below Average",0.8049
+"189","10X549","Discovery High School",828,0.859,"Below Average",0.8859
+"191","10X696","High School of American Studies at Lehman College",1341,0.238,"Above Average",0.9625
+"192","11X249","Bronx Health Sciences High School",828,0.695,"Below Average",0.9389
+"193","11X253","Bronx High School for Writing and Communication Arts",817,0.707,"Below Average",0.8326
+"194","11X265","Bronx Lab School",823,0.833,"Below Average",0.8095
+"195","11X270","Academy for Scholarship and Entrepreneurship (College Board)",800,0.736,"Below Average",0.8204
+"196","11X275","High School of Computers and Technology",795,0.762,"Below Average",0.8734
+"197","11X288","Collegiate Institute for Math and Science",949,0.725,"Below Average",0.8906
+"198","11X290","Bronx Academy of Health Careers",766,0.786,"Below Average",0.8966
+"199","11X299","Astor Collegiate Academy",839,0.722,"Below Average",0.8417
+"200","11X418","Bronx High School for the Visual Arts",836,0.783,"Below Average",0.8304
+"201","11X455","Harry S. Truman High School",801,0.72,"Below Average",0.8917
+"202","11X508","Bronxdale High School",850,0.789,"Below Average",0.8512
+"203","11X509","High School of Language and Innovation",696,0.989,"Below Average",0.8997
+"204","11X513","New World High School",770,0.961,"Below Average",0.8981
+"205","11X514","Bronxwood Preparatory Academy",800,0.706,"Below Average",0.9069
+"206","11X542","Pelham Preparatory Academy",853,0.728,"Below Average",0.8868
+"207","11X544","High School for Contemporary Arts",748,0.79,"Below Average",0.8578
+"208","11X545","Bronx Aerospace High School",813,0.783,"Below Average",0.7534
+"209","12X242","Mott Hall V",852,0.882,"Below Average",0.872
+"210","12X248","Metropolitan High School",775,0.938,"Below Average",0.7747
+"211","12X251","Explorations Academy",749,0.871,"Below Average",0.8189
+"212","12X267","Bronx Latin",775,0.948,"Below Average",0.8655
+"213","12X271","East Bronx Academy for the Future",824,0.942,"Below Average",0.8283
+"216","12X388","Pan American International High School at Monroe",632,0.989,"Below Average",0.8686
+"217","12X478","Cinema School",879,0.779,"Below Average",0.8902
+"218","12X479","Bronx Career and College Preparatory High School",749,0.858,"Below Average",0.8066
+"219","12X511","Bronx Envision Academy",749,0.873,"Below Average",0.8487
+"220","12X521","Metropolitan Soundview High School",872,0.913,"Below Average",0.8176
+"221","12X550","High School of World Cultures",715,0.972,"Below Average",0.855
+"222","12X682","Fannie Lou Hamer Freedom High School",692,0.822,"Below Average",0.7916
+"223","12X684","Wings Academy",751,0.892,"Below Average",0.7794
+"225","13K265","Dr. Susan S. McKinney Secondary School of the Arts",678,0.895,"Below Average",0.7771
+"226","13K350","Urban Assembly High School of Music and Art",744,0.865,"Below Average",0.8079
+"227","13K412","Brooklyn Community High School of Communication, Arts, and Media",744,0.879,"Below Average",0.843
+"228","13K419","Science Skills Center High School for Science, Technology, and the Creative Arts",796,0.827,"Below Average",0.9117
+"229","13K430","Brooklyn Technical High School",1290,0.594,"Above Average",0.9509
+"230","13K439","Brooklyn International High School",766,0.783,"Below Average",0.9055
+"231","13K483","Urban Assembly School for Law and Justice",889,0.694,"Below Average",0.8869
+"232","13K499","ACORN Community High School",774,0.847,"Below Average",0.6976
+"233","13K527","Urban Assembly Institute of Math and Science for Young Women",812,0.82,"Below Average",0.8497
+"234","13K595","Bedford Academy High School",969,0.898,"Below Average",0.921
+"235","13K605","George Westinghouse Career and Technical Education High School",816,0.767,"Below Average",0.8855
+"236","13K670","Benjamin Banneker Academy",963,0.73,"Below Average",0.8909
+"237","13K674","City Polytechnic High School of Engineering, Architecture, and Technology",980,0.763,"Below Average",0.9106
+"238","14K071","Juan Morel Campos Secondary School",722,0.852,"Below Average",0.8429
+"240","14K449","Brooklyn Latin School",1213,0.597,"Above Average",0.9386
+"241","14K454","Green School: An Academy for Environmental Careers",782,0.785,"Below Average",0.8516
+"242","14K474","PROGRESS High School for Professional Careers",757,0.835,"Below Average",0.7832
+"243","14K477","School for Legal Studies",783,0.905,"Below Average",0.7303
+"244","14K478","High School for Enterprise, Business, and Technology",909,0.858,"Below Average",0.8513
+"245","14K488","Brooklyn Preparatory High School",797,0.833,"Below Average",0.8395
+"246","14K558","Williamsburg High School for Architecture and Design",839,0.795,"Below Average",0.9232
+"247","14K561","Williamsburg Preparatory School",883,0.796,"Below Average",0.9063
+"248","14K586","Lyons Community School",750,0.9,"Below Average",0.7925
+"249","14K610","Automotive High School",748,0.824,"Below Average",0.8351
+"252","14K685","El Puente Academy for Peace and Justice",724,0.83,"Below Average",0.8215
+"254","15K429","Brooklyn School for Global Studies",774,0.801,"Below Average",0.9096
+"255","15K448","Brooklyn Secondary School for Collaborative Studies",812,0.654,"Below Average",0.8426
+"256","15K462","Secondary School for Law",844,0.78,"Below Average",0.8449
+"257","15K463","Secondary School for Journalism",843,0.854,"Below Average",0.8195
+"258","15K464","Park Slope Collegiate",782,0.655,"Below Average",0.8411
+"259","15K497","School for International Studies",823,0.454,"Below Average",0.8679
+"260","15K519","Cobble Hill School of American Studies",836,0.9,"Below Average",0.8055
+"262","15K656","Brooklyn High School of the Arts",880,0.708,"Below Average",0.8932
+"263","15K667","Sunset Park High School",778,0.85,"Below Average",0.8531
+"264","15K684","Millennium Brooklyn High School",1104,0.347,"Above Average",0.9597
+"266","16K455","Boys and Girls High School",791,0.804,"Below Average",0.8153
+"267","16K498","Brooklyn High School for Law and Technology",796,0.818,"Below Average",0.8112
+"269","16K688","Brooklyn Academy of Global Finance",777,0.962,"Below Average",0.8449
+"271","17K122","Pathways in Technology Early College High School",888,0.721,"Below Average",0.7768
+"272","17K382","Academy for College Preparation and Career Exploration (College Board)",783,0.836,"Below Average",0.8348
+"273","17K408","Academy of Hospitality and Tourism",759,0.929,"Below Average",0.8374
+"274","17K524","International High School at Prospect Heights",646,0.78,"Below Average",0.8774
+"275","17K528","High School for Global Citizenship",763,0.901,"Below Average",0.8671
+"276","17K531","School for Human Rights",809,0.815,"Below Average",0.8552
+"278","17K537","High School for Youth and Community Development at Erasmus",742,0.788,"Below Average",0.8607
+"279","17K539","High School for Service and Learning at Erasmus",759,0.768,"Below Average",0.8381
+"280","17K543","Science, Technology, and Research Early College High School at Erasmus",987,0.776,"Below Average",0.9255
+"281","17K546","High School for Public Service: Heroes of Tomorrow",922,0.762,"Below Average",0.9242
+"282","17K547","Brooklyn Academy of Science and the Environment",830,0.736,"Below Average",0.9042
+"283","17K548","Brooklyn School for Music and Theatre",775,0.797,"Below Average",0.8375
+"284","17K590","Medgar Evers College Preparatory School",1025,0.669,"Below Average",0.908
+"285","17K600","Clara Barton High School",832,0.746,"Below Average",0.8716
+"287","17K751","Academy for Health Careers",811,0.841,"Below Average",0.8638
+"288","18K563","It Takes a Village Academy",738,0.689,"Below Average",0.8996
+"289","18K566","Brooklyn Generation School",798,0.772,"Below Average",0.9023
+"290","18K567","Brooklyn Theatre Arts High School",772,0.826,"Below Average",0.8099
+"291","18K569","Kurt Hahn Expeditionary Learning School",772,0.806,"Below Average",0.8697
+"292","18K576","Victory Collegiate High School",794,0.745,"Below Average",0.8581
+"294","18K617","High School for Innovation in Advertising and Media",800,0.688,"Below Average",0.829
+"295","18K629","Cultural Academy for the Arts and Sciences",777,0.734,"Below Average",0.8543
+"296","18K633","High School for Medical Professions",831,0.972,"Below Average",0.8964
+"297","18K637","Academy for Conservation and the Environment",778,0.803,"Below Average",0.8598
+"298","18K642","Urban Action Academy",758,0.788,"Below Average",0.7836
+"299","19K404","Academy for Young Writers",795,0.848,"Below Average",0.8455
+"300","19K409","East New York Family Academy",915,0.825,"Below Average",0.8598
+"302","19K502","FDNY High School for Fire and Life Safety",734,0.816,"Below Average",0.744
+"303","19K504","High School for Civil Rights",764,0.791,"Below Average",0.7837
+"304","19K507","Performing Arts and Technology High School",768,0.895,"Below Average",0.8729
+"305","19K510","World Academy for Total Community Health High School",769,0.92,"Below Average",0.766
+"306","19K583","Multicultural High School",642,0.925,"Below Average",0.8931
+"307","19K615","Transit Tech Career and Technical Education High School",774,0.754,"Below Average",0.8068
+"308","19K618","Academy of Innovative Technology",771,0.822,"Below Average",0.8873
+"309","19K639","Brooklyn Lab School",759,0.877,"Below Average",0.83
+"310","19K659","Cypress Hills Collegiate Preparatory School",735,0.904,"Below Average",0.8632
+"311","19K660","W. H. Maxwell Career and Technical Education High School",659,0.891,"Below Average",0.7712
+"312","19K683","School for Classics: An Academy of Thinkers, Writers, and Performers",778,0.919,"Below Average",0.8104
+"314","20K445","New Utrecht High School",910,0.789,"Below Average",0.8774
+"315","20K485","High School of Telecommunication Arts and Technology",915,0.768,"Below Average",0.9423
+"316","20K490","Fort Hamilton High School",969,0.712,"Below Average",0.9079
+"317","20K505","Franklin Delano Roosevelt High School",915,0.778,"Below Average",0.8488
+"318","20K609","Urban Assembly School for Criminal Justice",841,0.909,"Below Average",0.8843
+"319","21K337","International High School at Lafayette",767,0.859,"Below Average",0.8751
+"320","21K344","Rachel Carson High School for Coastal Studies",866,0.674,"Below Average",0.8584
+"321","21K348","High School of Sports Management",741,0.755,"Below Average",0.7479
+"322","21K410","Abraham Lincoln High School",863,0.75,"Below Average",0.8675
+"323","21K468","Kingsborough Early College School",936,0.695,"Below Average",0.8924
+"324","21K525","Edward R. Murrow High School",979,0.663,"Below Average",0.908
+"325","21K540","John Dewey High School",930,0.816,"Below Average",0.9144
+"326","21K559","Life Academy High School for Film and Music",748,0.766,"Below Average",0.833
+"327","21K572","Expeditionary Learning School for Community Leaders",816,0.765,"Below Average",0.8199
+"328","21K620","William E. Grady Career and Technical Education High School",839,0.881,"Below Average",0.8214
+"329","21K690","Brooklyn Studio Secondary School",892,0.767,"Below Average",0.858
+"330","22K405","Midwood High School",1064,0.735,"Above Average",0.9226
+"331","22K425","James Madison High School",942,0.745,"Below Average",0.9341
+"332","22K535","Leon M. Goldstein High School for the Sciences",1097,0.454,"Above Average",0.9534
+"333","22K555","Brooklyn College Academy",997,0.711,"Below Average",0.9437
+"335","23K493","Brooklyn Collegiate (College Board)",789,0.883,"Below Average",0.8408
+"336","23K514","Frederick Douglass Academy VII High School",807,0.889,"Below Average",0.8644
+"338","23K697","Teachers Preparatory High School",793,0.932,"Below Average",0.745
+"340","24Q264","Academy of Finance and Enterprise",945,0.807,"Below Average",0.9327
+"341","24Q267","High School of Applied Communication",872,0.747,"Below Average",0.9037
+"342","24Q293","Civic Leadership Academy",859,0.761,"Below Average",0.9112
+"343","24Q296","Pan American International High School",660,0.842,"Below Average",0.9307
+"344","24Q299","Bard High School Early College Queens",1229,0.426,"Above Average",0.9647
+"345","24Q455","Newtown High School",835,0.761,"Below Average",0.891
+"346","24Q485","Grover Cleveland High School",874,0.703,"Below Average",0.8347
+"347","24Q520","Middle College High School at LaGuardia Community College",766,0.697,"Below Average",0.9317
+"348","24Q530","International High School at LaGuardia Community College",792,0.669,"Below Average",0.9183
+"349","24Q550","High School for Arts and Business",818,0.684,"Below Average",0.9128
+"350","24Q560","Robert F. Wagner Jr. Secondary School for Arts and Technology",923,0.73,"Below Average",0.8813
+"351","24Q585","Maspeth High School",947,0.55,"Below Average",0.9331
+"352","24Q600","Queens Vocational and Technical High School",903,0.855,"Below Average",0.9218
+"353","24Q610","Aviation Career and Technical Education High School",975,0.614,"Below Average",0.9737
+"356","25Q252","Queens School of Inquiry",1009,0.541,"Below Average",0.9116
+"357","25Q263","Flushing International High School",804,0.918,"Below Average",0.8814
+"358","25Q281","East-West School of International Studies",978,0.823,"Below Average",0.9145
+"359","25Q285","World Journalism Preparatory (College Board)",975,0.6,"Below Average",0.8949
+"360","25Q425","John Bowne High School",889,0.715,"Below Average",0.8445
+"361","25Q460","Flushing High School",851,0.779,"Below Average",0.843
+"362","25Q525","Townsend Harris High School",1320,0.467,"Above Average",0.9727
+"363","25Q670","Robert F. Kennedy Community High School",886,0.806,"Below Average",0.894
+"365","26Q415","Benjamin N. Cardozo High School",1068,0.623,"Above Average",0.9152
+"366","26Q430","Francis Lewis High School",1045,0.691,"Below Average",0.9166
+"367","26Q435","Martin Van Buren High School",793,0.737,"Below Average",0.8782
+"368","26Q495","Bayside High School",1002,0.71,"Below Average",0.9295
+"369","26Q566","Queens High School of Teaching, Liberal Arts, and the Sciences",887,0.569,"Below Average",0.9031
+"370","27Q260","Frederick Douglass Academy VI High School",828,0.751,"Below Average",0.7841
+"371","27Q262","Channel View School for Research",857,0.71,"Below Average",0.8845
+"372","27Q302","Queens High School for Information, Research, and Technology",734,0.691,"Below Average",0.8478
+"373","27Q308","Robert H. Goddard High School of Communication Arts and Technology",861,0.744,"Below Average",0.9324
+"374","27Q309","Academy of Medical Technology (College Board)",846,0.823,"Below Average",0.8427
+"376","27Q323","Scholars' Academy",1148,0.472,"Above Average",0.9214
+"377","27Q324","Rockaway Park High School for Environmental Sustainability",738,0.901,"Below Average",0.7768
+"379","27Q351","Rockaway Collegiate High School",802,0.807,"Below Average",0.8007
+"380","27Q400","August Martin High School",738,0.775,"Below Average",0.884
+"381","27Q475","Richmond Hill High School",819,0.806,"Below Average",0.8702
+"382","27Q480","John Adams High School",819,0.738,"Below Average",0.8652
+"383","27Q650","High School for Construction Trades, Engineering, and Architecture",946,0.597,"Below Average",0.9387
+"385","28Q284","York Early College Academy",977,0.69,"Below Average",0.9082
+"386","28Q310","Queens Collegiate (College Board)",894,0.857,"Below Average",0.8514
+"387","28Q325","Hillside Arts and Letters Academy",808,0.723,"Below Average",0.8656
+"388","28Q328","High School for Community Leadership",807,0.767,"Below Average",0.846
+"389","28Q350","Jamaica Gateway to the Sciences",947,0.745,"Below Average",0.8996
+"390","28Q440","Forest Hills High School",1002,0.782,"Below Average",0.8851
+"391","28Q505","Hillcrest High School",880,0.824,"Below Average",0.8632
+"392","28Q620","Thomas A. Edison Career and Technical Education High School",987,0.756,"Below Average",0.939
+"393","28Q680","Queens Gateway to Health Sciences Secondary School",1035,0.553,"Below Average",0.9197
+"394","28Q686","Queens Metropolitan High School",908,0.609,"Below Average",0.9178
+"395","28Q687","Queens High School for the Sciences at York College",1322,0.598,"Above Average",0.9709
+"396","28Q690","High School for Law Enforcement and Public Safety",841,0.695,"Below Average",0.8684
+"397","28Q896","Young Women's Leadership School in Queens",835,0.709,"Below Average",0.9093
+"399","29Q248","Queens Preparatory Academy",845,0.786,"Below Average",0.8105
+"400","29Q259","Pathways College Preparatory School (College Board)",832,0.76,"Below Average",0.8888
+"401","29Q265","Excelsior Preparatory High School",791,0.836,"Below Average",0.8663
+"402","29Q272","George Washington Carver High School for the Sciences",867,0.715,"Below Average",0.8486
+"403","29Q283","Preparatory Academy for Writers (College Board)",808,0.711,"Below Average",0.8512
+"405","29Q326","Cambria Heights Academy",842,0.732,"Below Average",0.8731
+"407","29Q492","Mathematics, Science Research, and Technology Magnet High School",798,0.735,"Below Average",0.836
+"408","29Q498","Humanities and Arts Magnet High School",793,0.829,"Below Average",0.8583
+"410","30Q286","Young Women's Leadership School in Astoria",947,0.792,"Below Average",0.9109
+"411","30Q301","Academy for Careers in Television and Film",902,0.557,"Below Average",0.9335
+"412","30Q445","William Cullen Bryant High School",890,0.833,"Below Average",0.8793
+"413","30Q450","Long Island City High School",853,0.823,"Below Average",0.8777
+"414","30Q501","Frank Sinatra School of the Arts High School",1079,0.388,"Above Average",0.9257
+"415","30Q502","Information Technology High School",863,0.741,"Below Average",0.8833
+"416","30Q555","Newcomers High School",864,0.874,"Below Average",0.8885
+"417","30Q575","Academy of American Studies",977,0.622,"Below Average",0.927
+"418","30Q580","Baccalaureate School for Global Education",1253,0.354,"Above Average",0.9409
+"419","31R047","CSI High School for International Studies",945,0.478,"Below Average",0.9497
+"420","31R064","Gaynor McCown Expeditionary Learning School",900,0.435,"Below Average",0.9146
+"421","31R080","Michael J. Petrides School",956,0.442,"Below Average",0.9096
+"422","31R440","New Dorp High School",900,0.624,"Below Average",0.9129
+"423","31R445","Port Richmond High School",859,0.749,"Below Average",0.8375
+"424","31R450","Curtis High School",911,0.745,"Below Average",0.8588
+"425","31R455","Tottenville High School",970,0.339,"Below Average",0.9158
+"426","31R460","Susan E. Wagner High School",986,0.546,"Below Average",0.9065
+"427","31R600","Ralph R. McKee Career and Technical Education High School",849,0.701,"Below Average",0.8368
+"428","31R605","Staten Island Technical High School",1371,0.421,"Above Average",0.9634
+"430","32K403","Academy for Environmental Leadership",731,0.912,"Below Average",0.8376
+"431","32K545","EBC High School for Public Service in Bushwick",763,0.858,"Below Average",0.8295
+"432","32K549","Bushwick School for Social Justice",722,0.83,"Below Average",0.791
+"433","32K552","Academy of Urban Planning",766,0.987,"Below Average",0.904
+"434","32K554","All City Leadership Secondary School",913,0.814,"Below Average",0.9138
+"435","32K556","Bushwick Leaders High School for Academic Excellence",761,0.957,"Below Average",0.8291
