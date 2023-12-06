@@ -1,0 +1,75 @@
+---
+title: "INFO 201 Final Project"
+author: "Tony Truong"
+date: "2023-12-05"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+
+sat_scores <- read.csv("scores.csv")
+sat_scores <- sat_scores %>% 
+  select(DBN = School.ID, School.Name, Average.Score..SAT.Math., Average.Score..SAT.Reading.)
+
+sat_scores$total_avg_SAT <- sat_scores$Average.Score..SAT.Math. + sat_scores$Average.Score..SAT.Reading.
+
+average_threshold <- 1050
+sat_scores$score_category <- ifelse(sat_scores$total_avg_SAT >= average_threshold, "Above Average", "Below Average")
+```
+
+
+```{r}
+poverty_data <- read.csv("cleaned_demo.csv")
+poverty_data <- poverty_data %>%
+  select(DBN, Percent_Poverty)
+```
+
+```{r}
+merged_data <- merge(sat_scores, poverty_data, by = "DBN", all.x = TRUE)
+merged_data <- na.omit(merged_data)
+
+merged_data <- merged_data %>%
+  select(DBN, School.Name, total_avg_SAT, Percent_Poverty, score_category)
+```
+
+```{r}
+colors <- ifelse(merged_data$score_category == "Above Average", "blue", "red")
+
+plot(merged_data$Percent_Poverty, merged_data$total_avg_SAT,
+     col = colors,
+     xlab = "Percentage of Poverty",
+     ylab = "Average SAT Score",
+     main = "Percentage of Poverty vs. Average SAT Score")
+```
+
+```{r}
+avg_attendance <- read.csv("school_average_attendance.csv")
+```
+
+```{r}
+merged_data2 <- merge(sat_scores, avg_attendance, by = "DBN", all.x = TRUE)
+merged_data2 <- na.omit(merged_data2)
+
+merged_data2 <- merged_data2 %>%
+  select(DBN, School.Name, total_avg_SAT, Attendance, score_category)
+```
+
+```{r}
+merged_data2$Attendance <- as.numeric(sub("%", "", merged_data2$Attendance))/100
+
+colors2 <- ifelse(merged_data2$score_category == "Above Average", "blue", "red")
+
+plot(merged_data2$Attendance, merged_data2$total_avg_SAT,
+     col = colors2,
+     xlab = "Attendance",
+     ylab = "Total Average SAT Score",
+     main = "Attendance vs. Total Average SAT Score")
+```
+
+```{r}
+summary_sat_scores <- sat_scores %>%
+  group_by(score_category) %>%
+  summarise(count = n())
+```
+
