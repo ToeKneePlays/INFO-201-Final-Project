@@ -1,0 +1,271 @@
+---
+title: "INFO 201 Final Project"
+author: "Tony Truong"
+date: "2023-12-09"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+
+sat_scores <- read.csv("scores.csv")
+sat_scores <- sat_scores %>% 
+  select(DBN = School.ID, School.Name, Average.Score..SAT.Math., Average.Score..SAT.Reading.)
+
+sat_scores$total_avg_SAT <- sat_scores$Average.Score..SAT.Math. + sat_scores$Average.Score..SAT.Reading.
+
+average_threshold <- 1050
+sat_scores$score_category <- ifelse(sat_scores$total_avg_SAT >= average_threshold, "Above Average", "Below Average")
+```
+
+```{r}
+poverty_data <- read.csv("cleaned_demo.csv")
+poverty_data <- poverty_data %>%
+  select(DBN, Percent_Poverty)
+```
+
+```{r}
+final_data <- merge(sat_scores, poverty_data, by = "DBN", all.x = TRUE)
+
+final_data <- final_data %>%
+  select(DBN, School.Name, total_avg_SAT, Percent_Poverty, score_category)
+```
+
+```{r}
+avg_attendance <- read.csv("school_average_attendance.csv")
+
+final_data <- merge(final_data, avg_attendance, by = "DBN", all.x = TRUE)
+final_data <- na.omit(final_data)
+```
+
+```{r}
+colors <- ifelse(final_data$score_category == "Above Average", "blue", "red")
+
+plot(final_data$Percent_Poverty, final_data$total_avg_SAT,
+     col = colors,
+     xlab = "Percentage of Poverty",
+     ylab = "Average SAT Score",
+     main = "Percentage of Poverty vs. Average SAT Score")
+```
+
+```{r}
+final_data$Attendance <- as.numeric(sub("%", "", final_data$Attendance))/100
+
+plot(final_data$Attendance, final_data$total_avg_SAT,
+     col = colors,
+     xlab = "Attendance",
+     ylab = "Total Average SAT Score",
+     main = "Attendance vs. Total Average SAT Score")
+```
+
+```{r}
+summary_sat_scores <- final_data %>%
+  group_by(score_category) %>%
+  summarise(count = n())
+```
+
+### Introduction
+
+**Context: Why is This an Interesting Topic?**
+
+The correlation between socioeconomic factors and academic performance has long been a topic of interest and concern. In the context of our study, we delve into the specific dynamics of New York City public schools, exploring the interplay between SAT scores, poverty levels, and attendance rates. This is an intriguing and relevant topic as it addresses critical questions about educational equity, the impact of socioeconomic conditions on student outcomes, and the potential role of attendance in academic achievement.
+
+**What Do We Already Know?**
+
+Existing literature and media coverage provide valuable insights into the challenges faced by students in socioeconomically disadvantaged areas. Studies often highlight the achievement gap, where students from lower-income backgrounds tend to perform lower on standardized tests compared to their more affluent counterparts. Additionally, discussions around attendance shed light on its importance in academic success. However, the unique context of New York City and the specific relationships between these factors within the local school system warrant a more focused and granular investigation.
+
+**What We Are Doing: Research Questions and Objectives**
+
+Our research revolves around several key questions, each aligned with a specific aspect of the dataset:
+
+1. **Understanding Socioeconomic Influence:**
+   - *Research Question:* How does the percentage of poverty in New York City public schools correlate with average SAT scores?
+   - *Objective:* Analyze the relationship between poverty levels and academic performance to identify potential disparities.
+
+2. **Attendance and Academic Performance:**
+   - *Research Question:* What is the association between school attendance rates and total average SAT scores?
+   - *Objective:* Investigate whether higher attendance rates correlate with higher SAT scores, emphasizing the role of regular attendance in academic achievement.
+
+3. **Impact of Economic Needs:**
+   - *Research Question:* How do economic needs, as indicated by eligibility for free or reduced-price lunch, relate to total average SAT scores?
+   - *Objective:* Explore the potential impact of economic needs on students' overall SAT performance.
+
+4. **Categorical Analysis:**
+   - *Research Question:* What is the distribution of schools labeled as "Above Average" or "Below Average" in SAT scores, and how does this distribution align with socioeconomic factors?
+   - *Objective:* Provide a categorical analysis to identify patterns and trends among schools with different SAT score categories.
+
+**Why is it Interesting?**
+
+Our study goes beyond the general understanding of the impact of socioeconomic factors on academic performance. By focusing on the unique context of New York City public schools, we aim to provide nuanced insights that can inform targeted interventions and policies. The results of our analysis have the potential to influence educational strategies, resource allocation, and support systems, ultimately contributing to improved outcomes for students in diverse socioeconomic environments. This study is not only academically intriguing but also socially relevant, addressing issues of equity and access in education. Anyone interested in educational policy, social justice, or the dynamics of student success should find our report compelling and informative.
+
+### Data
+
+Our selection of datasets is motivated by their rich focus on unraveling the correlation between SAT scores and various socio-economic factors within the context of New York City. Specifically, we are keen on exploring the distribution of students with above-average and below-average SAT scores.
+
+The datasets originate from Kaggle, a prominent data science platform, and are sourced from The New York City Department of Education. The data collection was facilitated by the College Board, with the files originally obtained from NYC Open Data.
+
+Regarding data collection, while the datasets are attributed to The New York City Department of Education and the College Board, specific details about the individuals or teams involved in the actual data collection are not explicitly provided.
+
+In terms of data usage permissions, these datasets are freely accessible to anyone interested in utilizing them. No specific restrictions exist regarding who can access the data or the purposes for which it can be employed. However, users are required to register on Kaggle to access and download the data.
+
+Our dataset focuses on exploring the relationship between SAT scores and key variables such as poverty rates, economic needs, attendance, and school characteristics in New York City. The population under consideration comprises students attending public schools in NYC, with the sample aimed at understanding the distribution of students with above and below-average SAT scores.
+
+Throughout the data processing and merging stages, several data quality issues were addressed to ensure the integrity of our final dataset. The dataset includes the following variables:
+
+- **DBN:** District Borough Number identifies a specific school or program.
+- **School.Name:** Name of a specific school or program.
+- **total_avg_SAT:** The total average SAT score for a given school (Avg Math + Avg Reading).
+- **Percent_Poverty:** The total percentage of students qualifying for free or reduced-price lunch or are eligible for Human Resources.
+- **Score_category:** Label of either "Above Average" or "Below Average" based on the average SAT score of 1050.
+- **Attendance:** An average of the school's daily attendance in the academic year of 2018/2019.
+
+Each row in the final dataset represents a singular school or program within the public school system in the NYC area. Each entry contains vital information, including the school ID number, school name, overall average SAT score, poverty percentage, scoring category, and attendance. The distinction between schools with above-average and below-average SAT scores is based on differences in average SAT scores among schools, with variances in poverty levels and attendance rates also contributing to the distinction.
+
+The final dataset comprises a total of 362 observations with 6 variables. The key variables are "total_avg_SAT" and "score_category." "total_avg_SAT" is calculated by adding the Average Math SAT Score with the Average Reading SAT Score. "score_category" is determined by whether the total_avg_SAT scoring exceeds or falls below the 1050 threshold. Additional variables, such as "poverty_percentage" and "attendance," provide a thorough understanding of the socioeconomic landscape and attendance trends.
+
+In terms of data quality, there were a total of 120 missing values observed in the datasets we used. The specific coding details for variables can be found in the dataset documentation and explained under Methods. These considerations ensure the reliability and validity of our dataset for subsequent analysis.
+
+### Methods
+
+In this study, our primary focus was on examining the relationship between average SAT scores, attendance rates, and the percentage of students qualifying for free or reduced-price lunch in NYC public schools. We utilized three datasets: "Average SAT Scores for NYC Public Schools" ("scores.csv"), "NYC Public School Attendance" ("cleaned_demo.csv"), and "school_average_attendance.csv" from Kaggle. Our methods involved a step-by-step data processing and merging approach to construct a comprehensive dataset named "final_data."
+
+### Dataset Selection and Variable Inclusion:
+
+1. **"scores.csv" Dataset:**
+   - **Variables Included:** School ID (`School.ID`), School Name (`School.Name`), Average SAT Math Score (`Average.Score..SAT.Math.`), Average SAT Reading Score (`Average.Score..SAT.Reading.`).
+   - **Rationale:** We selected these variables to identify each school uniquely and to calculate the total average SAT score by combining Math and Reading scores.
+
+2. **"cleaned_demo.csv" Dataset:**
+   - **Variables Included:** School ID (`DBN`), Percentage of Poverty (`Percent_Poverty`).
+   - **Rationale:** We retained only the necessary variables to explore the relationship between poverty levels and SAT scores.
+
+3. **"school_average_attendance.csv" Dataset:**
+   - **Variables Included:** School ID (`DBN`), Average Attendance (`avg_attendance`).
+   - **Rationale:** We integrated attendance data to investigate the impact of attendance on SAT scores.
+
+### Data Processing:
+
+- **Creation of New Variables:**
+  - We calculated the `total_avg_SAT` by adding the average SAT Math and Reading scores.
+  - Introduced the `score_category` variable, categorizing schools as "Above Average" or "Below Average" based on whether their total average SAT score exceeds the national average of 1050.
+
+- **Merging Datasets:**
+  - Merged the "scores.csv" and "cleaned_demo.csv" datasets using the common key variable `DBN` to create the "final_data" dataset.
+  - Further merged "school_average_attendance.csv" with "final_data" using the `DBN` key.
+
+- **Handling Missing Values:**
+  - Omitted schools with missing values (NAs) for any of the variables to ensure data integrity.
+
+### Sample Selection:
+
+- The sample comprised NYC public schools with available data on average SAT scores, attendance rates, and poverty levels.
+- We ensured a comprehensive dataset by merging multiple datasets, allowing for a holistic analysis of the selected variables.
+
+### Technical Decisions:
+
+- **Handling Missing Values:**
+  - Omitted schools with missing values to prevent biases and ensure the reliability of the analysis.
+
+- **Categorization of SAT Scores:**
+  - Introduced a categorical variable (`score_category`) to simplify the analysis and facilitate a clearer interpretation of the results.
+
+### Trade-offs and Considerations:
+
+- **Data Integrity vs. Sample Size:**
+  - The decision to omit schools with missing values aimed at maintaining data integrity. However, this may have led to a reduction in sample size.
+
+- **Categorical vs. Continuous Representation:**
+  - We chose to categorize SAT scores to simplify the analysis. This decision involves a trade-off between precision and interpretability.
+
+In summary, our approach involved careful consideration of variables, data processing steps, and sample selection to construct a meaningful dataset for analysis. We made technical decisions to address missing values and enhance the interpretability of our findings. The trade-offs considered during these decisions reflect the balance between data integrity, analytical complexity, and the interpretability of results.
+
+### Results
+
+#### Percentage of Poverty vs. Average SAT Score
+
+Our analysis reveals a compelling relationship between the percentage of poverty in schools and average SAT scores. The first graph vividly portrays this association, plotting Percentage of Poverty on the x-axis and Average SAT Score on the y-axis.
+
+- **Observations:**
+  - Blue data points, representing schools with Above Average SAT Scores, are predominantly clustered on the lower end of the percentage of poverty.
+  - In contrast, red data points, indicating Below Average SAT Scores, tend to concentrate on the higher end of the percentage of poverty.
+
+**Insights:**
+The noticeable pattern suggests an inverse correlation between the percentage of poverty and SAT scores. Schools with higher poverty rates tend to exhibit lower average SAT scores, highlighting the potential impact of socioeconomic factors on academic performance.
+
+*Figure 1: Percentage of Poverty vs. Average SAT Score*
+
+```{r echo=FALSE}
+plot(final_data$Percent_Poverty, final_data$total_avg_SAT,
+     col = colors,
+     xlab = "Percentage of Poverty",
+     ylab = "Average SAT Score",
+     main = "Percentage of Poverty vs. Average SAT Score")
+```
+
+
+#### Attendance vs. Total Average SAT Score
+
+Moving on to the second graph, which explores the relationship between Attendance and Total Average SAT Score, we delve into the dynamics of school attendance and its potential impact on overall SAT performance.
+
+- **Observations:**
+  - Blue data points, representing schools with Above Average SAT Scores, dominate the higher end of the attendance spectrum.
+  - Conversely, red data points, indicative of Below Average SAT Scores, are more prevalent on the lower end of the attendance scale.
+
+**Insights:**
+The graph suggests a positive correlation between attendance rates and SAT scores. Schools with higher attendance rates tend to exhibit higher total average SAT scores, emphasizing the importance of regular attendance in academic achievement.
+
+*Figure 2: Attendance vs. Total Average SAT Score*
+
+```{r echo=FALSE}
+plot(final_data$Attendance, final_data$total_avg_SAT,
+     col = colors,
+     xlab = "Attendance",
+     ylab = "Total Average SAT Score",
+     main = "Attendance vs. Total Average SAT Score")
+```
+
+
+### Key Takeaways:
+
+1. **Socioeconomic Influence:**
+   - The observed inverse correlation between percentage of poverty and SAT scores underscores the potential influence of socioeconomic factors on academic achievement.
+
+2. **Attendance Impact:**
+   - The positive correlation between attendance rates and SAT scores highlights the significance of regular school attendance in contributing to higher academic performance.
+
+### Implications and Further Exploration:
+
+- The results prompt considerations for targeted interventions to support schools in socioeconomically challenged areas, aiming to improve academic outcomes.
+- Exploring additional factors such as school resources, teacher-student ratios, and extracurricular opportunities could provide a more nuanced understanding of the dynamics influencing SAT scores.
+
+In conclusion, our results offer valuable insights into the relationships between socioeconomic indicators, attendance rates, and SAT scores, laying the groundwork for informed discussions and potential interventions to enhance educational outcomes.
+
+### Findings and Interpretations
+
+**Relevance to Research Questions:**
+
+The analysis of our dataset has yielded significant insights into the complex relationships between socio-economic factors and academic performance in New York City public schools. Addressing our key research questions, we observe the following:
+
+1. **Socioeconomic Influence:**
+   - The percentage of poverty in NYC public schools exhibits a discernible inverse correlation with average SAT scores. Schools with higher poverty levels tend to have lower average SAT scores, indicating the influence of socio-economic factors on academic performance.
+
+2. **Attendance and Academic Performance:**
+   - A positive correlation is evident between school attendance rates and total average SAT scores. Schools with higher attendance rates generally demonstrate higher SAT scores, underscoring the importance of regular attendance in academic success.
+
+3. **Impact of Economic Needs:**
+   - Economic needs, as indicated by eligibility for free or reduced-price lunch, align with lower average SAT scores. This suggests that economic challenges may contribute to lower academic performance among students.
+
+4. **Categorical Analysis:**
+   - The distribution of schools labeled as "Above Average" or "Below Average" in SAT scores reveals distinct patterns. Schools with below-average SAT scores tend to cluster in areas with higher poverty rates, emphasizing the intersectionality of socioeconomic factors.
+
+**Limitations:**
+
+While our findings provide valuable insights, it's crucial to acknowledge the limitations of our study. The generalization of our claims may be restricted to the specific context of New York City public schools. External factors not considered in our dataset, such as school resources, teaching quality, and extracurricular opportunities, may also play a role in academic outcomes. Additionally, the observational nature of our study prevents us from establishing causation.
+
+**Directions for Future Work:**
+
+To extend our story further and address these limitations, future analyses could incorporate additional variables such as teacher-student ratios, school funding, and the availability of advanced courses. A more in-depth exploration of the impact of specific interventions or policies on academic outcomes could provide actionable insights for educational policymakers. Furthermore, a longitudinal study tracking students over multiple years could offer a dynamic perspective on the evolving relationship between socio-economic factors and academic performance.
+
+**Summary and Takeaway Message:**
+
+In summary, our findings emphasize the intricate relationship between socio-economic factors and academic performance in New York City public schools. The impact of poverty on SAT scores and the positive correlation between attendance and academic success underscore the need for targeted interventions to address educational disparities. While our study provides a foundation for understanding these dynamics, future research endeavors should consider a broader range of variables and a longitudinal approach to enhance the depth and breadth of our insights. Ultimately, our takeaway message is that addressing socio-economic disparities in education is pivotal for fostering equitable academic opportunities and outcomes.
